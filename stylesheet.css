@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+
+.dish-list img{
+   width: 370px;
+    height: 290px;
+}
+
+.dish-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dish-list a{
+    flex: auto;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+
+
+.dish-list p{
+    text-align: center;
+    font-size: 40px;
+    color: chocolate;
+}
+
+.heading{
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    color: chocolate;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+ }
+
+.dish-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+
+  wrapper a {
+    border: 5px solid transparent;
+    width: 500px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+ }
+
+.dish-list a:before {
+    transition: all .6s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333333;
+    transform: scale(0);
+    border-radius: 5px;
+}
+
+.dish-list a:hover:before {
+    opacity: .2;
+    transform: scale(1);
+}
+
+.dish-list a:after {
+    transition: all .7s ease .2s;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #252525;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.dish-list a:hover:after {
+    opacity: .35;
+    transform: scale(1);
+    border-radius: 5px;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.bungkus,.bungkus-atas, .bungkus-bawah{
+  display: flex;
+}
+
+.kolom{
+  flex: 50%;
+}
+
+.contact-form{
+  padding-top:100px;
+}
+
+.contact-form p,h3{
+  color: #5f5d60;    
+}
+
+input,textarea{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+}
+
+.contact-submit{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+
+p{
+  display:block;
+}
+
+.section-title{
+  border-bottom:2px solid #dee7ec;
+  font-size:28px;
+  padding-bottom:15px;
+  margin-bottom:50px;
+}
+
+.head-mes {
+  padding-top: 239px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.head-mes span{
+  margin-top:50px;
+}
+
+.head-mes h2 {
+  font-weight: normal;
+}
+
+.head-mes h3 {
+  font-weight: normal;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: black;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #d2691e;
+  cursor: pointer;
+  box-shadow: 0 7px #964b00;
+  transition: all 0.5s;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.message:hover {
+  background-color: rgba(150, 75, 0, 0.3);
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  height: 50px;
+  width: 50%;
+  /*vertical-align: center;*/
+  margin-top: 5px;*/
+  /*float: center;*/
+}
+
+.logo-text{
+  line-height: 30px;
+  padding: 0 5px;
+  color: white;
+  display: block;
+  float: right;
+}
+
+.bungkus-atas {
+  float: left;
+}
+
+.bungkus-bawah {
+  float: left;
+  padding-bottom: 25px;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.clear {
+  clear: left;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none !important;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url("./images/1page.png");
+  background-size: cover;
+  color: orangered;
+  text-align: center;
+  position: relative;
+  font-style: bold;
+}
+
+.top-wrapper::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,3), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    /*opacity: 0.7;*/
+}
+
+.teks {
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-shadow: 3px 3px 2px darkred;
+}
+
+.teks2 {
+  font-size: 30px;
+  margin-bottom: 3px;
+  text-shadow: 3px 3px 2px black;
+  color: white;
+}
+
+
